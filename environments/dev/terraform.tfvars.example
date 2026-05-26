@@ -1,6 +1,6 @@
 project_name   = "tucn-cc"
 environment    = "dev"
-student_suffix = "agi"
+student_suffix = "balotaa"
 location       = "francecentral"
 
 vnet_address_space             = "10.0.0.0/16"
@@ -28,21 +28,21 @@ enable_backend_private_endpoint        = false
 # az policy assignment list --query "[].{name:name, displayName:displayName, parameters:parameters}" -o json
 # Then set location to one of the policy-allowed region names, for example "francecentral".
 
-frontend_image_name = "your-dockerhub-username/tucn-cc-frontend"
-frontend_image_tag  = "sha-abc1234"
+frontend_image_name = "anastasiabalota/tucn-cc-frontend:sha-1dead44"
+frontend_image_tag  = "sha-1dead44"
 
-backend_image_name = "your-dockerhub-username/tucn-cc-backend-api"
-backend_image_tag  = "sha-abc1234"
+backend_image_name = "anastasiabalota/tucn-cc-backend-api:sha-1dead44"
+backend_image_tag  = "sha-1dead44"
 
 # Docker Hub credentials are optional for public images.
 # Only set these if your registry or images require authentication.
 # dockerhub_username = "your-dockerhub-username"
 # dockerhub_password = "dckr_pat_xxxxxxxxxxxx"
 
-cognito_region       = "eu-central-1"
-cognito_user_pool_id = "eu-central-1_XXXXXXXXX"
-cognito_client_id    = "XXXXXXXXXXXXXXXXXXXXXXXXXX"
-cognito_domain       = "https://XXXXXXXXX.auth.eu-central-1.amazoncognito.com"
+cognito_region       = "eu-north-1"
+cognito_user_pool_id = "eu-north-1_jyLIY5S7E"
+cognito_client_id    = "66qeenpqcd42fgcubpeunepbr0"
+cognito_domain       = "https://eu-north-1jyliy5s7e.auth.eu-north-1.amazoncognito.com"
 
 cors_origin = "https://app-tucn-cc-dev.azurewebsites.net"
 
